@@ -1,7 +1,8 @@
 name: Solución ejercicio1
 on:
   workflow_dispatch:
-  env: NOMBRE_USER:"Alberto"
+  env: 
+    NOMBRE_USER:"Alberto"
 jobs:
   ej1:
     name: Primer Job
