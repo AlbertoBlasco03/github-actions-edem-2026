@@ -1,0 +1,16 @@
+name: Solución ejercicio1
+on:
+  workflow_dispatch:
+  en: NOMBRE_USER:"Alberto"
+jobs:
+  ej1:
+    name: Primer Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hola $NOMBRE_USER desde el Job 1"
+
+  ej2:
+    name: Segundo Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hola $NOMBRE_USER desde el Job 2"
